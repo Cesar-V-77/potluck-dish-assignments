@@ -4,6 +4,8 @@ const guestInput = document.querySelector(".add-guest input");
 const guestList = document.querySelector(".guest-list");
 const guestCount = document.querySelector(".attendance");
 const guestFull = document.querySelector(".alert");
+const assignButton = document.querySelector(".assign");
+const assignedItems = document.querySelector(".assigned-items");
 
 addGuestButton.addEventListener("click", function () {
   const guest = guestInput.value;
@@ -35,4 +37,21 @@ const updateGuestCount = function () {
     guestInputLabel.classList.add("hide");
     guestFull.classList.remove("hide");
   }
+};
+
+const assignItems = function () {
+  const potluckItems = [
+    "ham and cheese sliders",
+    "potato salad",
+    "white sangria",
+    "cucumber salad",
+    "chicken sliders",
+    "cowboy pasta salad",
+    "lemon crumb bars",
+    "seven layer dip",
+    "oven baked hot dogs",
+    "cowboy beans",
+    "jamaican rum punch",
+    "honey bun cake",
+  ];
 };
