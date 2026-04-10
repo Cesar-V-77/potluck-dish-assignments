@@ -55,3 +55,12 @@ const assignItems = function () {
     "honey bun cake",
   ];
 };
+
+const allGuests = document.querySelectorAll(".guest-list li");
+for (let guest of allGuests) {
+  const randomPotluckIndex = Math.floor(Math.random() * potluckItems.length);
+  const randomPotLuckItem = potluckItems[randomPotluckIndex];
+  const listItem = document.createElement("li");
+  listItem.innerText = `${guest.innerText} is bringing ${randomPotLuckItem}.`;
+  assignedItems.append(listItem);
+}
